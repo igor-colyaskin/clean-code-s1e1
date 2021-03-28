@@ -47,11 +47,14 @@
   padding: 0px;
 }
 
-.list-item, .section-header {
+.list-item,
+.section-header {
   list-style: none;
 }
 
-.input-checkbox, input-text,.btn{
+.input-checkbox,
+.input-text,
+.btn{
   outline: none;
 }
 
