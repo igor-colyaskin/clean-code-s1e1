@@ -5,6 +5,13 @@
   font-family: Lato, sans-serif;
 }
 
+header,
+main,
+section {
+  margin: 0;
+  padding: 0;
+}
+
 .matrix {
   width: 500px;
   margin: 0 auto;
@@ -90,8 +97,8 @@
   line-height: 18px;
   height: 21px;
   padding: 0 9px;
-  border: 1px solid #dDd;
-  background: #FFF;
+  border: 1px solid #ddd;
+  background: #fff;
   border-radius: 6px;
   font-family: Lato, sans-serif;
   color: #888;
@@ -111,8 +118,11 @@
   width: 318px;
 }
 
+#add-task {
+  margin: 16px 0;
+}
 #add-task > .btn:hover {
-  color: #0FC57C;
+  color: #0fc57c;
 }
 
 /* Task list */
@@ -146,7 +156,7 @@
 }
 
 .list-item > .btn.delete:hover {
-  color: #CF2323;
+  color: #cf2323;
 }
 
 .btn.delete .picture {
