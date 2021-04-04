@@ -14,6 +14,7 @@ section {
   margin: 0 auto;
   display: block;
   text-align: right;
+/**/  height: 272px;
 }
 
 .matrix .matrix__picture_render {
@@ -23,6 +24,7 @@ section {
 
 .matrix .matrix__more-inf_font {
   font-family: fantasy, cursive;
+/**/ height: 23px;
 }
 
 @media (max-width:768px) {
@@ -43,11 +45,16 @@ section {
 
 .task-row-wrapper {
   display: flex;
+/**/  height: 21px;
 }
 
 .controls {
   margin: 0;
   padding: 0px;
+}
+
+.list-item{
+  /**/  height: 32px;
 }
 
 .list-item,
@@ -86,7 +93,7 @@ section {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
-  height: 21px;
+/**/  height: 19px;
   padding: 0 9px;
   border: 1px solid #ddd;
   background: #fff;
