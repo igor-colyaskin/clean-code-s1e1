@@ -1,17 +1,14 @@
-/* Basic Style */
 .page {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
 }
-
 header,
 main,
 section {
   margin: 0;
   padding: 0;
 }
-
 .matrix {
   width: 500px;
   margin: 0 auto;
@@ -19,11 +16,12 @@ section {
   text-align: right;
 }
 
-.matrix .picture {
+.matrix .matrix__picture_render {
+  display: block;
   width: 100%;
 }
 
-.matrix .more-inf {
+.matrix .matrix__more-inf_font {
   font-family: fantasy, cursive;
 }
 
@@ -32,13 +30,11 @@ section {
     text-align: center;
   }
 }
-
 .tasks-table {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
-
 .task {
   width: 56%;
   display: inline-block;
@@ -58,13 +54,11 @@ section {
 .section-header {
   list-style: none;
 }
-
 .input-checkbox,
 .input-text,
 .btn{
   outline: none;
 }
-
 .btn {
   background: none;
   border: 0px;
@@ -74,11 +68,9 @@ section {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-
 .btn:hover {
   color: #3a3a3a;
 }
-
 /* Heading */
 .section-header,
 .lbl-new-task {
@@ -90,7 +82,6 @@ section {
   margin: 0;
   text-transform: uppercase;
 }
-
 .input-text {
   margin: 0;
   font-size: 18px;
@@ -103,88 +94,71 @@ section {
   font-family: Lato, sans-serif;
   color: #888;
 }
-
 .input-text:focus {
   color: #333;
 }
-
 /* New Task */
 .lbl-new-task {
   display: block;
   margin: 0 0 20px;
 }
-
 #new-task {
   width: 318px;
 }
-
 #add-task {
   margin: 16px 0;
 }
 #add-task > .btn:hover {
   color: #0fc57c;
 }
-
 /* Task list */
 .list-item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .list-item > * {
   vertical-align: middle;
 }
-
 .list-item > .input-checkbox {
   margin: 0 10px;
 }
-
 .list-item > .lbl {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-
 .list-item >    .input-text {
   width: 226px;
 }
-
 .list-item > .btn.delete:hover {
   color: #cf2323;
 }
-
 .btn.delete .picture {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-
 .btn.delete .picture:hover {
   transform: rotateZ(0);
 }
-
 /* Completed */
 .controls#completed-tasks .lbl {
   text-decoration: line-through
   color: #888;
 }
-
 /* Edit Task */
 .controls .list-item .input-text {
   display: none;
 }
-
 .controls .list-item.edit-mode .input-text {
   display: inline-block;
   width: 224px;
 }
-
 .controls .list-item.edit-mode .lbl {
   display: none;
 }
